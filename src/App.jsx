@@ -7,7 +7,10 @@ function Board() {
 
   function handleClick(i) {
     const nextSquare = square.slice();
-    if(xIsNext){
+    if (square[i]){
+      return;
+    }
+    else if(xIsNext){
       nextSquare[i]= "X";
     }
     else {
