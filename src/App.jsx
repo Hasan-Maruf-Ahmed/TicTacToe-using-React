@@ -3,11 +3,18 @@ import "./App.css";
 
 function Board() {
   const [square, setsquare] = useState(Array(9).fill(null));
+  const [xIsNext, setxIsNext] = useState(true);
 
   function handleClick(i) {
     const nextSquare = square.slice();
-    nextSquare[i] = "X";
+    if(xIsNext){
+      nextSquare[i]= "X";
+    }
+    else {
+      nextSquare[i]= "O";
+    }
     setsquare(nextSquare);
+    setxIsNext(!xIsNext);
   }
   return (
     <>
