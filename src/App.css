@@ -28,3 +28,12 @@
   padding-bottom: 8px;
   font-style: italic;
 }
+
+.game {
+  display: flex;
+}
+
+.game-info {
+  margin-left: 60px;
+  margin-top: 45px;
+}
