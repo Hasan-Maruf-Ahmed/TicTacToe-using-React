@@ -37,3 +37,14 @@
   margin-left: 60px;
   margin-top: 45px;
 }
+
+.game-history {
+  padding-bottom: 10px;
+}
+
+.game-history button {
+  background-color: rgb(105, 180, 250);
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+}
